@@ -1,0 +1,57 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "cards",
+    "typeAlias": "html_card",
+    "type": "static",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 7.5,
+    "sizeY": 3,
+    "config": {
+      "datasources": [],
+      "timewindow": {
+        "realtime": {
+          "timewindowMs": 60000
+        }
+      },
+      "showTitle": false,
+      "backgroundColor": "#000000",
+      "color": "rgba(255,255,255,0.87)",
+      "padding": "8px",
+      "settings": {
+        "cardHtml": "\n<ul>\n  <li><a>ICT Etisalat Booth Bin</a></li>\n  <li style=\"float:right\"><a><img  class=\"logo-image img-fluid\" src=\"https://i.postimg.cc/HkVMkYW6/etisalat-logo.png\" ></a></li>\n</ul>\n",
+        "cardCss": ".card{\n    font-weight: bold;\n    font-size: 32px;\n    color: black;\n    width: 100%;\n    height: 100%;\n    background-color: black;\n}\n .logo-image{\n    width: 93px;\n    height: 104px;\n    border-radius: 20%;\n    overflow: hidden;\n}\nul {\n\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  overflow: hidden;\n  background-color: black;\n}\n\nli {\n  float: left;\n}\n\nli a {\n  display: block;\n    font-weight: bold;\n    font-size: 32px;\n  color: white;\n  text-align: center;\n  padding: 14px 16px;\n  text-decoration: none;\n}\n\nli a:hover:not(.active) {\n  background-color: #111;\n}\n\n.active {\n  background-color: #04AA6D;\n}"
+      },
+      "title": "New HTML Card",
+      "dropShadow": true,
+      "showTitleIcon": false,
+      "iconColor": "rgba(0, 0, 0, 0.87)",
+      "iconSize": "24px",
+      "titleTooltip": "",
+      "enableFullscreen": true,
+      "widgetStyle": {},
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "showLegend": false
+    },
+    "row": 0,
+    "col": 0,
+    "id": "6a0ceff1-56ec-8094-eedf-f54ca469e1c3"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {},
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 24,
+    "sizeY": 3
+  },
+  "originalColumns": 24
+}

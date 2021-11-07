@@ -1,0 +1,142 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "cards",
+    "typeAlias": "html_value_card",
+    "type": "latest",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 7.5,
+    "sizeY": 3,
+    "config": {
+      "datasources": [
+        {
+          "type": "entity",
+          "name": null,
+          "entityAliasId": "a63104ce-3379-3b64-57dc-116993c09f19",
+          "filterId": null,
+          "dataKeys": [
+            {
+              "name": "Parking Lots",
+              "type": "timeseries",
+              "label": "Parking Lots",
+              "color": "#2196f3",
+              "settings": {},
+              "_hash": 0.5696430891940711,
+              "units": null,
+              "decimals": null,
+              "funcBody": null,
+              "usePostProcessing": null,
+              "postFuncBody": null
+            },
+            {
+              "name": "Parking Slots Available-2",
+              "type": "timeseries",
+              "label": "Parking Slots Available-2",
+              "color": "#4caf50",
+              "settings": {},
+              "_hash": 0.8344819933641123
+            },
+            {
+              "name": "Parking Slots Available-4",
+              "type": "timeseries",
+              "label": "Parking Slots Available-4",
+              "color": "#f44336",
+              "settings": {},
+              "_hash": 0.20125037056592543
+            },
+            {
+              "name": "Parking Slots Occupied-2",
+              "type": "timeseries",
+              "label": "Parking Slots Occupied-2",
+              "color": "#ffc107",
+              "settings": {},
+              "_hash": 0.03684269604001522
+            },
+            {
+              "name": "Parking Slots Occupied-4",
+              "type": "timeseries",
+              "label": "Parking Slots Occupied-4",
+              "color": "#607d8b",
+              "settings": {},
+              "_hash": 0.4318929111963492
+            },
+            {
+              "name": "Parking Slots Total Count",
+              "type": "timeseries",
+              "label": "Parking Slots Total Count",
+              "color": "#9c27b0",
+              "settings": {},
+              "_hash": 0.7991972767741782
+            },
+            {
+              "name": "Revenue",
+              "type": "timeseries",
+              "label": "Revenue",
+              "color": "#8bc34a",
+              "settings": {},
+              "_hash": 0.9536723277236696
+            }
+          ]
+        }
+      ],
+      "timewindow": {
+        "realtime": {
+          "timewindowMs": 60000
+        }
+      },
+      "showTitle": false,
+      "backgroundColor": "#000000",
+      "color": "rgba(255,255,255,0.87)",
+      "padding": "0px",
+      "settings": {
+        "cardCss": ".card {\n   width: 100%;\n   height: 100%;\n   box-sizing: border-box;\n}\n .logo-image{\n    width: 93px;\n    height: 104px;\n    border-radius: 20%;\n    overflow: hidden;\n}\nul {\n\n  list-style-type: none;\n  margin: 0;\n  padding-bottom: 10px;\n  overflow: hidden;\n  background-color: black;\n  text-align: center;\n}\n\nli {\n  float: left;\n}\n\nli a {\n  display: block;\n    font-weight: bold;\n    font-size: 20px;\n  color: white;\n  text-align: center;\n  text-decoration: none;\n  padding-right: 52px;\n  margin-top: 15px;\n}\n\nli a:hover:not(.active) {\n  background-color: #111;\n}\n\n.active {\n  background-color: #04AA6D;\n}\n.card .content {\n   \n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   box-sizing: border-box;\n   padding-left: 20px;\n   padding-bottom: 50px;\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 20px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}\n\n.card .value {\n    font-size: 38px;\n    font-weight: 200;\n}\n\n.card .description {\n    font-size: 20px;\n    color: #999;\n}\n\nimg{\n    padding-right: 25px;\n    padding-top: 5px;\n}\n.words{\n    font-size: 30px;\n}\n.inlined{\n    display: inline-block;\n    padding-left: 30px;\n}\n.informationBlock{\n    border-block-color: white;\n    border-right-style: solid;\n    padding-right: 25px;\n}",
+        "cardHtml": "<div class='card'>\n    <ul>\n      <li><a href=\"https://app.sstm-eg.com/dashboards/d6298290-3e16-11ec-bb88-035b58ba08f0\">Dashboard</a></li>\n      <li><a href=\"https://app.sstm-eg.com/dashboards/68753e10-3e07-11ec-bb88-035b58ba08f0\">Layout</a></li>\n    </ul>\n    <div class='content'>\n        <span class=\"informationBlock\">\n            <h4>\n                Parking Lot\n            </h4>\n            <div>\n               Total counts: \n            </div>\n            <div>\n                <span>\n                    <img src=\"https://i.postimg.cc/Sx8Z0CRk/car-parking.png\"/>\n                </span>\n                <span class=\"words\">\n                    ${#0:0}\n                </span>\n            </div>\n        </span> \n        <span class=\"informationBlock\">\n            <h4>\n                Parking Slots\n            </h4>\n            <div class=\"inlined\">\n                <div>\n                   Total counts: \n                </div>\n                <div>\n                    <span>\n                        <img src=\"https://i.postimg.cc/Sx8Z0CRk/car-parking.png\"/>\n                    </span>\n                    <span class=\"words\">\n                        ${#5:0}\n                    </span>\n                </div>\n            </div>\n            <div class=\"inlined\">\n                <div>\n                   Available 4 wheels: \n                </div>\n                <div>\n                    <span>\n                        <img src=\"https://i.postimg.cc/Sx8Z0CRk/car-parking.png\"/>\n                    </span>\n                    <span class=\"words\">\n                        ${#2:0}\n                    </span>\n                </div>\n            </div>\n            \n            <div class=\"inlined\">\n                <div>\n                   Occupied 4 wheels: \n                </div>\n                <div>\n                    <span>\n                        <img src=\"https://i.postimg.cc/Sx8Z0CRk/car-parking.png\"/>\n                    </span>\n                    <span class=\"words\">\n                        ${#4:0}\n                    </span>\n                </div>\n            </div>\n            <div class=\"inlined\">\n                <div>\n                   Available 2 wheels: \n                </div>\n                <div>\n                    <span>\n                        <img src=\"https://i.postimg.cc/Sx8Z0CRk/car-parking.png\"/>\n                    </span>\n                    <span class=\"words\">\n                        ${#1:0}\n                    </span>\n                </div>\n            </div>\n            <div class=\"inlined\">\n                <div>\n                   Occupied 2 wheels: \n                </div>\n                <div>\n                    <span>\n                        <img src=\"https://i.postimg.cc/Sx8Z0CRk/car-parking.png\"/>\n                    </span>\n                    <span class=\"words\">\n                        ${#3:0}\n                    </span>\n                </div>\n            </div>\n        </span>\n        <span>\n            <h4>\n                Revenue\n            </h4>\n            <div>\n               Total revenue: \n            </div>\n            <div>\n                <span>\n                    <img src=\"https://i.postimg.cc/Sx8Z0CRk/car-parking.png\"/>\n                </span>\n                <span class=\"words\">\n                    ${#6:0} LE\n                </span>\n            </div>\n        </span>\n    </div>\n</div>"
+      },
+      "title": "New HTML Value Card",
+      "dropShadow": false,
+      "enableFullscreen": true,
+      "widgetStyle": {},
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "useDashboardTimewindow": true,
+      "showLegend": false,
+      "actions": {},
+      "showTitleIcon": false,
+      "iconColor": "rgba(0, 0, 0, 0.87)",
+      "iconSize": "24px",
+      "titleTooltip": "",
+      "decimals": 0
+    },
+    "row": 0,
+    "col": 0,
+    "id": "6bdbe9f4-45b4-4097-55ba-8f06da390699"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "dashboard dummy data",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "1c43aed0-3f3f-11ec-bb88-035b58ba08f0"
+          }
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 22,
+    "sizeY": 4
+  },
+  "originalColumns": 24
+}

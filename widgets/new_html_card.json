@@ -1,0 +1,46 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "cards",
+    "typeAlias": "html_card",
+    "type": "static",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 7.5,
+    "sizeY": 3,
+    "config": {
+      "datasources": [],
+      "timewindow": {
+        "realtime": {
+          "timewindowMs": 60000
+        }
+      },
+      "showTitle": false,
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "8px",
+      "settings": {
+        "cardHtml": "\n    <a class=\"navbar-brand\" href=\"/\">\n      <div class=\"logo-image\">\n            <img src=\"https://imgur.com/a/4HhFLow\" class=\"img-fluid\">\n      </div>\n    </a>",
+        "cardCss": ".a{\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n .logo-image{\n    width: 500px;\n    height: 500px;\n    border-radius: 50%;\n    overflow: hidden;\n    margin-top: -6px;\n}"
+      },
+      "title": "New HTML Card",
+      "dropShadow": true
+    },
+    "row": 0,
+    "col": 0,
+    "id": "6a0ceff1-56ec-8094-eedf-f54ca469e1c3"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {},
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 17,
+    "sizeY": 3
+  },
+  "originalColumns": 24
+}
